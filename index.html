@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoorthi | Professional Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #243247;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #10243e;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #72b7ef;
+        }
+
+        .hero {
+            padding: 100px 8%;
+            background: #e7eef8;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero span {
+            color: #2473b9;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #173e66;
+            color: white;
+            padding: 12px 25px;
+            margin-top: 25px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 65px 8%;
+        }
+
+        section h2 {
+            color: #173e66;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+
+        .card h3 {
+            color: #2473b9;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #10243e;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media(max-width: 600px) {
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            nav a {
+                margin-left: 0;
+                margin-right: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>SPOORTHI.</h2>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Hello, I'm <span>Spoorthi.</span></h1>
+
+    <h3>Commerce Student | Aspiring Finance Professional</h3>
+
+    <p>
+        Welcome to my professional portfolio.
+        I am passionate about finance, accounting,
+        business technology and continuous learning.
+        I believe in developing skills and turning
+        ideas into meaningful projects.
+    </p>
+
+    <a href="#about" class="button">Explore My Portfolio</a>
+</div>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <p>
+        I am a Bachelor of Commerce student with a
+        growing interest in accounting, financial
+        management and business technology.
+
+        I am also pursuing the US CMA professional
+        qualification and continuously expanding
+        my knowledge through practical learning
+        and professional development.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Accounting</h3>
+            <p>Financial Accounting and Business Fundamentals.</p>
+        </div>
+
+        <div class="card">
+            <h3>Microsoft Office</h3>
+            <p>MS Word, PowerPoint, Excel and Advanced Excel.</p>
+        </div>
+
+        <div class="card">
+            <h3>Data Analytics</h3>
+            <p>Power BI and spreadsheet-based data analysis.</p>
+        </div>
+
+        <div class="card">
+            <h3>Accounting Software</h3>
+            <p>Tally Prime and practical accounting applications.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Avadhani Traders</h3>
+            <p>
+                A practical accounting project developed
+                using Tally Prime to explore business
+                transactions and accounting processes.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+                A personal website created using HTML
+                and CSS to showcase my education,
+                skills and professional journey.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education & Professional Development</h2>
+
+    <div class="card">
+        <h3>Bachelor of Commerce (B.Com)</h3>
+        <p>RNS Institute of Technology</p>
+
+        <h3>US CMA</h3>
+        <p>Professional qualification journey.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Let's Connect</h2>
+
+    <p>
+        Thank you for visiting my portfolio.
+        I look forward to learning, collaborating
+        and exploring new opportunities.
+    </p>
+
+    <p>
+        GitHub:
+        <a href="https://github.com/spoorthisavadhani-bot">
+            Visit My GitHub
+        </a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Spoorthi | Personal Professional Portfolio</p>
+</footer>
+
+</body>
+</html>
