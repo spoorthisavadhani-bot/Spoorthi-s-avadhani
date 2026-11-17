@@ -2,259 +2,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spoorthi | Professional Portfolio</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f7fb;
-            color: #243247;
-            line-height: 1.7;
-        }
-
-        header {
-            background: #10243e;
-            color: white;
-            padding: 20px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        header h2 {
-            letter-spacing: 2px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-        }
-
-        nav a:hover {
-            color: #72b7ef;
-        }
-
-        .hero {
-            padding: 100px 8%;
-            background: #e7eef8;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
-
-        .hero span {
-            color: #2473b9;
-        }
-
-        .hero p {
-            max-width: 650px;
-            margin-top: 15px;
-            font-size: 18px;
-        }
-
-        .button {
-            display: inline-block;
-            background: #173e66;
-            color: white;
-            padding: 12px 25px;
-            margin-top: 25px;
-            border-radius: 6px;
-            text-decoration: none;
-        }
-
-        section {
-            padding: 65px 8%;
-        }
-
-        section h2 {
-            color: #173e66;
-            margin-bottom: 20px;
-            font-size: 30px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 22px;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-        }
-
-        .card h3 {
-            color: #2473b9;
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background: #10243e;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
-
-        @media(max-width: 600px) {
-            .hero h1 {
-                font-size: 34px;
-            }
-
-            nav {
-                margin-top: 15px;
-            }
-
-            nav a {
-                margin-left: 0;
-                margin-right: 12px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spoorthi | Beyond the Ordinary</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+:root {
+ --bg:#100c12;
+ --panel:#19121b;
+ --gold:#e8bd8a;
+ --pink:#e9a0b5;
+ --white:#fff5ed;
+ --muted:#b9aab4;
+}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--white);font-family:'DM Sans',sans-serif;line-height:1.7}
+a{color:inherit;text-decoration:none}
+nav{position:sticky;top:0;z-index:10;background:#100c12ed;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff15;padding:18px 7%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'Playfair Display',serif;font-size:23px;color:var(--gold)}
+nav .links{display:flex;gap:23px;font-size:13px;color:var(--muted)}
+nav a:hover{color:var(--pink)}
+.hero{min-height:650px;padding:100px 9%;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 85% 30%,#713d593d,transparent 45%),radial-gradient(ellipse at 5% 90%,#9b5a5930,transparent 40%)}
+.hero:after{content:"✧";position:absolute;right:10%;top:12%;font-size:260px;color:#e8bd8a16}
+.hero-content{max-width:750px;position:relative;z-index:1}
+.eyebrow{letter-spacing:5px;text-transform:uppercase;color:var(--gold);font-size:12px}
+h1{font-family:'Playfair Display',serif;font-size:clamp(55px,9vw,105px);line-height:1.12;margin:25px 0}
+h1 em{color:var(--pink);font-weight:500}
+.hero h3{font-size:17px;color:var(--gold);font-weight:500}
+.hero p{color:var(--muted);max-width:580px;margin:22px 0;font-size:16px}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{padding:12px 25px;border:1px solid var(--gold);border-radius:30px;color:var(--gold);transition:.3s}
+.btn.primary{background:var(--pink);color:#25121b;border-color:var(--pink)}
+.btn:hover{transform:translateY(-4px);box-shadow:0 8px 25px #e9a0b533}
+section{padding:90px 9%;scroll-margin-top:70px}
+.section-label{font-size:12px;letter-spacing:4px;color:var(--gold);text-transform:uppercase}
+h2{font-family:'Playfair Display',serif;font-size:clamp(34px,5vw,50px);margin:12px 0 28px}
+.intro{color:var(--muted);max-width:750px}
+.about-grid,.contact-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:50px;align-items:center}
+.quote{border-left:2px solid var(--pink);padding:22px 28px;background:var(--panel);font-family:'Playfair Display',serif;font-size:23px;font-style:italic;color:var(--gold)}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin-top:30px}
+.stat{padding:20px;background:var(--panel);border:1px solid #ffffff12;border-radius:12px}
+.stat strong{display:block;color:var(--pink);font-size:21px}
+.stat span{color:var(--muted);font-size:12px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}
+.card{background:var(--panel);padding:27px;border:1px solid #ffffff12;border-radius:14px;transition:.3s}
+.card:hover{transform:translateY(-7px);border-color:var(--gold)}
+.card .symbol{font-size:28px;color:var(--gold)}
+.card h3{font-family:'Playfair Display',serif;font-size:22px;margin:13px 0}
+.card p{font-size:14px;color:var(--muted)}
+.project{min-height:190px;display:flex;flex-direction:column;justify-content:space-between}
+.project a{color:var(--pink);font-size:13px;margin-top:20px}
+.skills{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.skills span{border:1px solid #cda47b66;padding:10px 17px;border-radius:30px;color:var(--gold);font-size:13px}
+.timeline{border-left:1px solid var(--gold);padding-left:28px;margin-top:30px}
+.timeline-item{position:relative;margin-bottom:30px}
+.timeline-item:before{content:"";position:absolute;left:-34px;top:9px;width:10px;height:10px;border-radius:50%;background:var(--pink)}
+.timeline-item h3{font-family:'Playfair Display',serif;font-size:22px}
+.timeline-item p{color:var(--muted);font-size:14px}
+.contact-box{background:linear-gradient(135deg,#32202d,#19121b);padding:35px;border-radius:18px;border:1px solid #e8bd8a44}
+footer{text-align:center;padding:35px;border-top:1px solid #ffffff15;color:var(--muted);font-size:13px}
+footer span{color:var(--pink)}
+@media(max-width:750px){
+ nav{align-items:flex-start;gap:15px;flex-direction:column}
+ nav .links{flex-wrap:wrap;gap:12px}
+ .hero{min-height:570px;padding:80px 7%}
+ section{padding:65px 7%}
+ .about-grid,.contact-grid{grid-template-columns:1fr;gap:25px}
+ .cards{grid-template-columns:1fr}
+}
+</style>
 </head>
-
 <body>
 
-<header>
-    <h2>SPOORTHI.</h2>
+<nav>
+<a class="logo" href="#home">✧ SPOORTHI.</a>
+<div class="links">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#journey">Journey</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<header class="hero" id="home">
+<div class="hero-content">
+<div class="eyebrow">✦ Dream · Learn · Achieve ✦</div>
+<h1>Hi, I'm<br><em>Spoorthi.</em></h1>
+<h3>B.Com Student &nbsp;|&nbsp; Finance Enthusiast</h3>
+<p>
+A curious mind, a passion for finance, and a vision
+to build something meaningful. Exploring the
+intersection of accounting, technology and business.
+</p>
+<div class="actions">
+<a class="btn primary" href="#about">Discover My Journey ↗</a>
+<a class="btn" href="#projects">Explore Projects</a>
+</div>
+</div>
 </header>
 
-<div class="hero">
-    <h1>Hello, I'm <span>Spoorthi.</span></h1>
-
-    <h3>Commerce Student | Aspiring Finance Professional</h3>
-
-    <p>
-        Welcome to my professional portfolio.
-        I am passionate about finance, accounting,
-        business technology and continuous learning.
-        I believe in developing skills and turning
-        ideas into meaningful projects.
-    </p>
-
-    <a href="#about" class="button">Explore My Portfolio</a>
-</div>
-
 <section id="about">
-    <h2>About Me</h2>
-
-    <p>
-        I am a Bachelor of Commerce student with a
-        growing interest in accounting, financial
-        management and business technology.
-
-        I am also pursuing the US CMA professional
-        qualification and continuously expanding
-        my knowledge through practical learning
-        and professional development.
-    </p>
+<div class="section-label">01 — The person behind the ambition</div>
+<h2>About Me.</h2>
+<div class="about-grid">
+<div>
+<p class="intro">
+I'm Spoorthi, a Bachelor of Commerce student at
+RNS Institute of Technology, passionate about
+finance, accounting and technology.
+<br><br>
+My journey is about learning beyond textbooks,
+developing practical skills and building the
+foundation for a meaningful professional career.
+I'm currently pursuing the US CMA pathway and
+exploring the world of business and financial management.
+</p>
+<div class="stats">
+<div class="stat"><strong>B.Com</strong><span>Academic journey</span></div>
+<div class="stat"><strong>US CMA</strong><span>Professional pathway</span></div>
+<div class="stat"><strong>Finance</strong><span>Area of interest</span></div>
+<div class="stat"><strong>Always Learning</strong><span>Personal philosophy</span></div>
+</div>
+</div>
+<div class="quote">
+"Success is not a destination. It is the discipline of becoming better every single day."
+</div>
+</div>
 </section>
 
 <section id="skills">
-    <h2>Technical Skills</h2>
-
-    <div class="grid">
-
-        <div class="card">
-            <h3>Accounting</h3>
-            <p>Financial Accounting and Business Fundamentals.</p>
-        </div>
-
-        <div class="card">
-            <h3>Microsoft Office</h3>
-            <p>MS Word, PowerPoint, Excel and Advanced Excel.</p>
-        </div>
-
-        <div class="card">
-            <h3>Data Analytics</h3>
-            <p>Power BI and spreadsheet-based data analysis.</p>
-        </div>
-
-        <div class="card">
-            <h3>Accounting Software</h3>
-            <p>Tally Prime and practical accounting applications.</p>
-        </div>
-
-    </div>
+<div class="section-label">02 — What I bring to the table</div>
+<h2>Skills & Expertise.</h2>
+<p class="intro">A growing combination of commerce knowledge, digital tools and professional capabilities.</p>
+<div class="cards">
+<div class="card"><div class="symbol">✧</div><h3>Accounting</h3><p>Financial accounting, business fundamentals and practical bookkeeping.</p></div>
+<div class="card"><div class="symbol">▦</div><h3>Microsoft Excel</h3><p>Excel, Advanced Excel and spreadsheet-based analysis.</p></div>
+<div class="card"><div class="symbol">◈</div><h3>Power BI</h3><p>Exploring data visualization and business intelligence.</p></div>
+<div class="card"><div class="symbol">⌘</div><h3>Tally Prime</h3><p>Practical accounting software experience and business transactions.</p></div>
+<div class="card"><div class="symbol">✎</div><h3>Communication</h3><p>Presentation, written communication and collaboration.</p></div>
+<div class="card"><div class="symbol">◇</div><h3>Problem Solving</h3><p>Curiosity, research and a continuous learning mindset.</p></div>
+</div>
 </section>
 
 <section id="projects">
-    <h2>My Projects</h2>
-
-    <div class="grid">
-
-        <div class="card">
-            <h3>Avadhani Traders</h3>
-            <p>
-                A practical accounting project developed
-                using Tally Prime to explore business
-                transactions and accounting processes.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Personal Portfolio Website</h3>
-            <p>
-                A personal website created using HTML
-                and CSS to showcase my education,
-                skills and professional journey.
-            </p>
-        </div>
-
-    </div>
+<div class="section-label">03 — Turning learning into action</div>
+<h2>Selected Projects.</h2>
+<p class="intro">A showcase of practical learning and digital creativity.</p>
+<div class="cards">
+<div class="card project">
+<div><div class="symbol">▤</div><h3>Avadhani Traders</h3><p>A practice business accounting project developed using Tally Prime to explore accounting entries and business transactions.</p></div>
+<span>ACCOUNTING · TALLY PRIME</span>
+</div>
+<div class="card project">
+<div><div class="symbol">✧</div><h3>Personal Portfolio</h3><p>A personal website designed and published using HTML, CSS and GitHub Pages to present my professional journey.</p></div>
+<span>WEB DESIGN · GITHUB</span>
+</div>
+<div class="card project">
+<div><div class="symbol">◈</div><h3>Future Projects</h3><p>Exploring new opportunities in finance, business analytics and technology through practical projects.</p></div>
+<span>IN PROGRESS</span>
+</div>
+</div>
 </section>
 
-<section id="education">
-    <h2>Education & Professional Development</h2>
+<section id="journey">
+<div class="section-label">04 — Education & growth</div>
+<h2>My Journey.</h2>
+<div class="timeline">
+<div class="timeline-item"><h3>Bachelor of Commerce</h3><p>RNS Institute of Technology · Currently pursuing</p></div>
+<div class="timeline-item"><h3>US CMA</h3><p>Professional qualification · Currently pursuing</p></div>
+<div class="timeline-item"><h3>Computer Applications</h3><p>Learning Word, PowerPoint, Excel, Power BI, Advanced Excel and Tally Prime.</p></div>
+<div class="timeline-item"><h3>Continuous Learning</h3><p>Building knowledge through courses, projects and professional development.</p></div>
+</div>
+</section>
 
-    <div class="card">
-        <h3>Bachelor of Commerce (B.Com)</h3>
-        <p>RNS Institute of Technology</p>
-
-        <h3>US CMA</h3>
-        <p>Professional qualification journey.</p>
-    </div>
+<section id="certifications">
+<div class="section-label">05 — Learning never stops</div>
+<h2>Certifications & Achievements.</h2>
+<div class="cards">
+<div class="card"><div class="symbol">✧</div><h3>Certifications</h3><p>Professional course certificates and learning credentials will be added here.</p></div>
+<div class="card"><div class="symbol">♛</div><h3>Achievements</h3><p>Academic, project and fellowship milestones will be showcased here.</p></div>
+<div class="card"><div class="symbol">◇</div><h3>Future Goals</h3><p>Developing expertise in finance, accounting and global business.</p></div>
+</div>
 </section>
 
 <section id="contact">
-    <h2>Let's Connect</h2>
-
-    <p>
-        Thank you for visiting my portfolio.
-        I look forward to learning, collaborating
-        and exploring new opportunities.
-    </p>
-
-    <p>
-        GitHub:
-        <a href="https://github.com/spoorthisavadhani-bot">
-            Visit My GitHub
-        </a>
-    </p>
+<div class="section-label">06 — Every connection begins somewhere</div>
+<div class="contact-grid">
+<div>
+<h2>Let's Create<br><em style="color:#e9a0b5">Something Meaningful.</em></h2>
+<p class="intro">Interested in connecting, collaborating or sharing ideas? I'd love to hear from you.</p>
+</div>
+<div class="contact-box">
+<h3 style="font-family:'Playfair Display';font-size:26px;color:#e8bd8a">Find me online</h3>
+<p style="color:#b9aab4;margin:15px 0">Explore my work and professional journey.</p>
+<a class="btn" href="https://github.com/spoorthisavadhani-bot" target="_blank">GitHub Profile ↗</a>
+</div>
+</div>
 </section>
 
 <footer>
-    <p>© 2026 Spoorthi | Personal Professional Portfolio</p>
+<p>Designed with ambition & care <span>✧</span> © 2026 Spoorthi</p>
+<p>Dream boldly. Learn continuously. Achieve meaningfully.</p>
 </footer>
 
 </body>
